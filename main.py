@@ -5,8 +5,8 @@ from dataLoading import readData
 
 
 def main():
-    print("Some processing stuff ig")
-    print(readData())
+    bounces = readData()
+    print(bounces[0])
 
 
 if __name__ == "__main__":

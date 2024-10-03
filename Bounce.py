@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # I am unconvinced by the use of a class for this,
 # but for readabilities sake I think it is likely a the preferable option.
 # TODO: further comment the values in this class.
@@ -33,5 +34,20 @@ class Bounce:
     acceleration = np.array([0.0, 0.0])  #Y,Z
 
     # --- ---
-    def __init__(self):
-        print("Hello, world!")
+
+    # Not sure if this is the intended use of __repr__()?
+    def __repr__(self):
+        name = (f"bowlerReleaseSpeed: {self.bowlerReleaseSpeed}\n"
+                f"bouncePos: {self.bouncePos}\n"
+                f"stumpsPos: {self.stumpsPos}\n"
+                f"swing:{self.swing}\n"
+                f"deviation: {self.deviation}\n"
+                f"shotLandingPos: {self.shotLandingPos}\n"
+                f"bounceVelocity: {self.bounceVelocity}\n"
+                f"outOfBounceAngle: {self.outOfBounceAngle}\n"
+                f"dropAngle: {self.dropAngle}\n"
+                f"angleLeavingBowlersHand: {self.angleLeavingBowlersHand}\n"
+                f"bowlerReleasePos: {self.bowlerReleasePos}\n"
+                f"acceleration: {self.acceleration}")
+
+        return name
